@@ -33,11 +33,11 @@ if(name === "" || type === "" || region === ""){
 }; // Temporay will change once rest is finished
 
 
-        // Create pokemon object here (const pokemon) using user input Strings
+    // Create pokemon object here (const pokemon) using user input Strings
 const pokemon = {'name' : name, 'type' : type, 'region' : region};
 console.log(pokemon);
 
-        // Create a span element (const pokemonData) and put the pokemon objects properties inside of it
+    // Create a span element (const pokemonData) and put the pokemon objects properties inside of it
 const pokemonData = document.createElement("span");
 const pokeName = document.createTextNode(pokemon.name);
 pokemonData.appendChild(pokeName);
@@ -86,6 +86,8 @@ pokedexEntry.innerHTML += previewButton;
 
         // The we will append pokedexEntry to the innerHTML of the pokedexEntries ul element
 document.getElementById("pokedex-entries").appendChild(pokedexEntry);
+const pokedexMemory = [pokemon];
+console.log(pokedexMemory);
 
 
 /*-----------------------------------------------
